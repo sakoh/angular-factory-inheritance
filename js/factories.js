@@ -1,7 +1,7 @@
 /**
  * Created by sakohartounian on 9/17/14.
  */
-SakoApp.factories = angular('SakoApp.factories',[])
+angular.module('SakoApp.factories',[])
     .factory('SimpleFactory',[function () {
 
         var customers = [

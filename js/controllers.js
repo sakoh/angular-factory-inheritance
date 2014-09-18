@@ -2,7 +2,7 @@
  * Created by sakohartounian on 9/17/14.
  */
 
-SakoApp.controllers = angular.module('SakoApp.controllers',[])
+angular.module('SakoApp.controllers',[])
     .controller('IndexCtrl', ['$scope','AdvancedFactory', function ($scope, AdvancedFactory) {
 
         $scope.customers = AdvancedFactory.getCustomers();

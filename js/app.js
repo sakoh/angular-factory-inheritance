@@ -7,15 +7,14 @@
 
 var SakoApp = angular.module('SakoApp',['ngRoute','SakoApp.controllers','SakoApp.factories']);
 
-
 SakoApp.config(['$routeProvider', function($routeProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl: 'partials/index.html',
-                controller: 'IndexCtrl'
-            })
-            .when('/hello',{
-                templateUrl:'partials/hello.html',
-                controller:'HelloCtrl'
-            });
-    }]);
+    $routeProvider
+        .when('/', {
+            templateUrl: 'partials/index.html',
+            controller: 'IndexCtrl'
+        })
+        .when('/hello',{
+            templateUrl:'partials/hello.html',
+            controller:'HelloCtrl'
+        });
+}]);
